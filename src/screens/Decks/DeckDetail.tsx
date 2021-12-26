@@ -16,7 +16,7 @@ export const DeckDetail = (props: any) => {
     if (!deck.title) {
       navigation.dispatch(CommonActions.goBack())
     }
-  })
+  },[])
 
   const handleDeleteDeck = (deck: any) => {
     dispatch(removeDeck(deck.title))
